@@ -27,16 +27,27 @@
 				box-shadow: inset 0 -40px 60px 10px #F16344;
 			}
 
-
-
 			h1{
 				font-family:Oswald;
 				font-weight: 800;
 			}
+			.half {
+			width: calc(50% - 3em);
+			margin-left: 3em;
+			margin-top: 3em;
+			padding: 0;
+			}
+
+			.triple {
+			width: calc(33.33333% - 2em);
+			margin-left: 2em;
+			margin-top: 3em;
+			padding: 0;
+			}
 		</style>
 	</head>
 	<body class="is-preload" style="linear-gradient(180deg, #7ab8cc 0, #d6e9f0) !important;">
-		<div class="background-color-layer" style="background-image: url('static/assets/images/img-01.jpg')"></div>
+		<div class="background-color-layer" style="background-image: url('static/assets/images/ny3.png')"></div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -48,7 +59,7 @@
 						</p>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/michael-yu-a4372885/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/mkyurw" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 						</ul>
 					</header>
 
@@ -72,12 +83,14 @@
 										<header class="major">
 											<h2>Introduction</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
+										<p>本人余茂愷，畢業於國立臺灣科技大學，期間於台灣微軟與福特汽車公司兩間全球百大企業實習，也發起了火柴青年計畫橫跨美國東西岸，並出版相關勵志書籍。
+											畢業後加入台灣本田，協助評估短期市場調查，與企業中長期計畫，獲得公司創立以來最高績效評價。
+											有感於自身對數據分析與機器學習之興趣，透過外語線上課程與培訓班，增加更多實戰經驗，包含利用Python做資料清洗、Scikit-Learn建立機器學習模型、OpenCV影像辨識深度學習等。
+											面對未知的領域，抱持樂觀的態度，設立各階段目標與績效檢視，期待未來能在資料科學領域貢獻，在快速變動的商業社會中，協助解決企業與社會所面臨的挑戰。
+										</p>
+<!--										<ul class="actions">-->
+<!--											<li><a href="https://www.linkedin.com/in/michael-yu-a4372885/" class="button">Learn More</a></li>-->
+<!--										</ul>-->
 									</div>
 									<span class="image"><img src="../static/assets/images/mk.jpg" alt="" /></span>
 								</div>
@@ -88,44 +101,74 @@
 								<header class="major">
 									<h2>Project</h2>
 								</header>
-								<table style="border: none;">
-									<tr style="margin: auto;">
-										<th>
-											<img src="../static/assets/images/cv.png" width="138" height="158"></img>
-										</th>
-										<th>
-											<img src="../static/assets/images/sk.png" width="198" height="118" style="margin-bottom:30px;"></img>
-										</th>
-										<th>
-											<img src="../static/assets/images/py.png" width="178" height="168"></img>
-										</th>
-									</tr>
-									<tr>
-										<td>
-											<h3 style="font-weight:bold;">Healthcare AIOT Solution</h3>
-											<p style="font-size:90%">結合 IOT 物聯網、 Scikit-Learn AI 模型、OpenCV 影像識別，並透過 Java 網頁前後端技術，自主開發Dashboard，此解決方案減少醫療人力負荷，並提升醫療品質。</p>
-										</td>
-										<td>
-											<h3 style="font-weight:bold;">AI Predict Heart Disease</h3>
-											<p style="font-size:90%">使用 Scikit-Learn 機器學習，分析 Kaggle 平台上7萬筆醫療數據資料庫，並儲存成預測模型，用於預測心血管疾病的發生，透過智慧監控可有效照護高風險病患。</p>
-										</td>
-										<td>
-											<h3 style="font-weight:bold;">Password Hack Checker</h3>
-											<p style="font-size:90%">資訊時代下，人們普遍擁有多組帳號密碼，透過此程式可快速掌握自己使用的密碼是否安全，若有被駭客盜取的紀錄，將顯示被盜用的次數。</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<a href="generic.html" class="button">Learn More</a>
-										</td>
-										<td>
-											<a href="https://github.com/mkyurw/Heart_Disease_Prediction/blob/master/Cardio.ipynb" class="button">Learn More</a>
-										</td>
-										<td>
-											<a href="generic.html" class="button">Learn More</a>
-										</td>
-									</tr>
-								</table>
+								<ul class="features">
+									<li class="half">
+										<span style="display: inline-block; width:180px; height:180px"><img src="../static/assets/images/cv.png" width="138" height="158"></img></span>
+										<h3 style="font-weight:bold;"><i class="fas fa-chevron-left"></i>
+											Healthcare AIOT Solution<i class="fas fa-chevron-right"></i><br>
+											OpenCV</h3>
+										<p style="font-size:90%">結合 IOT 物聯網、 Scikit-Learn AI 模型、OpenCV 影像識別，並透過 Java 網頁前後端技術，自主開發Dashboard，此解決方案減少醫療人力負荷，並提升醫療品質。</p>
+										<a href="generic.html" class="button">Learn More</a>
+									</li>
+									<li class="half">
+										<span style="display: inline-block; width:180px; height:180px"><img src="../static/assets/images/sk.png" width="198" height="118" style="margin-bottom:30px;"></img></span>
+										<h3 style="font-weight:bold;"><i class="fas fa-chevron-left"></i>
+											Healthcare AIOT Solution<i class="fas fa-chevron-right"></i><br>
+											Heart Disease Prediction AI Model</h3>
+										<p style="font-size:90%">使用 Scikit-Learn 機器學習，分析 Kaggle 平台上7萬筆醫療數據資料庫，並儲存成預測模型，用於預測心血管疾病的發生，透過智慧監控可有效照護高風險病患。</p>
+										<a href="generic.html" class="button">Learn More</a>
+									</li>
+									<li class="half" style="margin-top: 3em;">
+										<span style="display: inline-block; width:180px; height:180px"><img src="../static/assets/images/py.png" width="178" height="168"></img></span>
+										<h3 style="font-weight:bold;">Password Hack Checker</h3>
+										<p style="font-size:90%">資訊時代下，人們普遍擁有多組帳號密碼，透過此程式可快速掌握自己使用的密碼是否安全，若有被駭客盜取的紀錄，將顯示被盜用的次數。</p>
+										<a href="generic.html" class="button">Learn More</a>
+									</li>
+									<li class="half">
+										<span style="display: inline-block; width:180px; height:180px"><img src="../static/assets/images/py.png" width="178" height="168"></img></span>
+										<h3 style="font-weight:bold;">Password Hack Checker</h3>
+										<p style="font-size:90%">資訊時代下，人們普遍擁有多組帳號密碼，透過此程式可快速掌握自己使用的密碼是否安全，若有被駭客盜取的紀錄，將顯示被盜用的次數。</p>
+										<a href="generic.html" class="button">Learn More</a>
+									</li>
+								</ul>
+<!--								<table style="border: none;">-->
+<!--									<tr style="margin: auto;">-->
+<!--										<th>-->
+<!--											<img src="../static/assets/images/cv.png" width="138" height="158"></img>-->
+<!--										</th>-->
+<!--										<th>-->
+<!--											<img src="../static/assets/images/sk.png" width="198" height="118" style="margin-bottom:30px;"></img>-->
+<!--										</th>-->
+<!--										<th>-->
+<!--											<img src="../static/assets/images/py.png" width="178" height="168"></img>-->
+<!--										</th>-->
+<!--									</tr>-->
+<!--									<tr>-->
+<!--										<td>-->
+<!--											<h3 style="font-weight:bold;">Healthcare AIOT Solution</h3>-->
+<!--											<p style="font-size:90%">結合 IOT 物聯網、 Scikit-Learn AI 模型、OpenCV 影像識別，並透過 Java 網頁前後端技術，自主開發Dashboard，此解決方案減少醫療人力負荷，並提升醫療品質。</p>-->
+<!--										</td>-->
+<!--										<td>-->
+<!--											<h3 style="font-weight:bold;">AI Predict Heart Disease</h3>-->
+<!--											<p style="font-size:90%">使用 Scikit-Learn 機器學習，分析 Kaggle 平台上7萬筆醫療數據資料庫，並儲存成預測模型，用於預測心血管疾病的發生，透過智慧監控可有效照護高風險病患。</p>-->
+<!--										</td>-->
+<!--										<td>-->
+<!--											<h3 style="font-weight:bold;">Password Hack Checker</h3>-->
+<!--											<p style="font-size:90%">資訊時代下，人們普遍擁有多組帳號密碼，透過此程式可快速掌握自己使用的密碼是否安全，若有被駭客盜取的紀錄，將顯示被盜用的次數。</p>-->
+<!--										</td>-->
+<!--									</tr>-->
+<!--									<tr>-->
+<!--										<td>-->
+<!--											<a href="generic.html" class="button">Learn More</a>-->
+<!--										</td>-->
+<!--										<td>-->
+<!--											<a href="https://github.com/mkyurw/Heart_Disease_Prediction/blob/master/Cardio.ipynb" class="button">Learn More</a>-->
+<!--										</td>-->
+<!--										<td>-->
+<!--											<a href="generic.html" class="button">Learn More</a>-->
+<!--										</td>-->
+<!--									</tr>-->
+<!--								</table>-->
 <!--								<ul class="features">-->
 <!--									<li>-->
 <!--										<span class="icon solid major style1"><img src="../static/assets/images/cv.png" width="178" height="198"></img></span>-->
@@ -159,40 +202,36 @@
 <!--									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />-->
 <!--									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>-->
 								</header>
-								<table>
-									<tr >
-										<td style="width:50%;">
-											<img src="../static/assets/images/ntust2.png" width="75" height="28" style="padding-bottom:5px;">
-											<h3 style="font-weight:bold;">National Taiwan University <br>of Science & Technology</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">Industrial Management</h2>
-											<h4 style="margin-bottom: 15px;">2012 Sep-2016 Jun</h4>
-											<h4 style="margin-bottom: 35px;">GPA 3.7/4.0, Deans List Winner, Best Graduation Project</h4>
-										</td>
-										<td style="width:50%;">
-											<img src="../static/assets/images/up.png" width="45" height="28" style="padding-bottom:5px;">
-											<h3 style="font-weight:bold;">University of Pardubice<br>Czech Republic</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">Business Administration</h2>
-											<h4 style="margin-bottom: 15px;">2016 Feb-2016 Jun</h4>
-											<h4 style="margin-bottom: 35px;">Exchange student program with scholarship</h4>
-										</td>
-									</tr>
-									<tr>
-										<td style="width:50%;">
-											<img src="../static/assets/images/ztm.png" width="58" height="24" style="padding-bottom:5px;">
-											<h3 style="font-weight:bold;">Zero To Mastery Online Academy</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">Complete Python Developer Course</h2>
-											<h4 style="margin-bottom: 15px;">2020 Jun-2020 Jul (30hr)</h4>
-											<h4 style="margin-bottom: 35px;">Web Development, Machine Learning, Image Processing</h4>
-										</td>
-										<td style="width:50%;">
-											<img src="../static/assets/images/iii.png" width="30" height="25" style="padding-bottom:5px;">
-											<h3 style="font-weight:400;">資訊工業策進會</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">AIOT 智聯網應用</h2>
-											<h4 style="margin-bottom: 15px;">2020 Mar-2020 Jul (600hr)</h4>
-											<h4 style="margin-bottom: 35px;">Java, Python, TensorFlow, Scikit-Learn</h4>
-										</td>
-									</tr>
-								</table>
+								<ul class="features">
+									<li class="half">
+										<img src="../static/assets/images/ntust2.png" width="75" height="28" style="padding-bottom:5px;">
+										<h3 style="font-weight:bold;">National Taiwan University <br>of Science & Technology</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">Industrial Management</h2>
+										<h4 style="margin-bottom: 15px;">2012 Sep-2016 Jun</h4>
+										<h4 style="margin-bottom: 35px;">GPA 3.7/4.0, Deans List Winner, Best Graduation Project</h4>
+									</li>
+									<li class="half">
+										<img src="../static/assets/images/up.png" width="45" height="28" style="padding-bottom:5px;">
+										<h3 style="font-weight:bold;">University of Pardubice<br>Czech Republic</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">Business Administration</h2>
+										<h4 style="margin-bottom: 15px;">2016 Feb-2016 Jun</h4>
+										<h4 style="margin-bottom: 35px;">Exchange student program with scholarship</h4>
+									</li>
+									<li class="half" style="margin-top: 3em;">
+										<img src="../static/assets/images/ztm.png" width="58" height="24" style="padding-bottom:5px;">
+										<h3 style="font-weight:bold;">Zero To Mastery Online Academy</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">Complete Python Developer Course</h2>
+										<h4 style="margin-bottom: 15px;">2020 Jun-2020 Jul (30hr)</h4>
+										<h4 style="margin-bottom: 35px;">Web Development, Machine Learning, Image Processing</h4>
+									</li>
+									<li class="half">
+										<img src="../static/assets/images/iii.png" width="30" height="25" style="padding-bottom:5px;">
+										<h3 style="font-weight:400;">資訊工業策進會</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">AIOT 智聯網應用</h2>
+										<h4 style="margin-bottom: 15px;">2020 Mar-2020 Jul (600hr)</h4>
+										<h4 style="margin-bottom: 35px;">Java, Python, TensorFlow, Scikit-Learn</h4>
+									</li>
+								</ul>
 <!--								<ul class="statistics">-->
 <!--									<li class="style1">-->
 <!--										<span class="icon solid fa-code-branch"></span>-->
@@ -230,40 +269,36 @@
 <!--									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />-->
 <!--									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>-->
 								</header>
-								<table>
-									<tr >
-										<td style="width:50%;vertical-align:text-top;">
-											<img src="../static/assets/images/honda.png" width="75" height="55" style="padding-bottom:5px;">
-											<h3 style="font-weight:bold;">Honda Taiwan</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">Product Planning Advanced Specialist</h2>
-											<h4 style="margin-bottom: 15px;">2017 Apr-2019 Oct</h4>
-											<h4 style="margin-bottom: 35px;">Received highest performance grade ever in Honda Taiwan</h4>
-										</td>
-										<td style="width:50%;vertical-align:text-top;">
-											<img src="../static/assets/images/match.png" width="55" height="55" style="padding-bottom:5px;">
-											<h3 style="font-weight:bold;">Find Your Own Way to Burn, the Publication</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">Author</h2>
-											<h4 style="margin-bottom: 15px;">2015 Mar-2016 Oct</h4>
-											<h4 style="margin-bottom: 35px;">Road trip across the US to collect inspirational stories</h4>
-										</td>
-									</tr>
-									<tr>
-										<td style="width:50%;vertical-align:text-top;">
-											<img src="../static/assets/images/microsoft.png" width="60" height="65" style="padding-bottom:5px;">
-											<h3 style="font-weight:bold;">Microsoft Taiwan</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">Marketing and Operation Intern</h2>
-											<h4 style="margin-bottom: 15px;">2014 Jul-2015 Jun</h4>
-											<h4 style="margin-bottom: 35px;">Windows team enterprise lecturer</h4>
-										</td>
-										<td style="width:50%;vertical-align:text-top;">
-											<img src="../static/assets/images/ford.png" width="95" height="50" style="padding-bottom:5px;">
-											<h3 style="font-weight:400; margin-top:10px;">Ford Lio Ho Taiwan</h3>
-											<h2 style="font-size:20px; margin-bottom: 3px;">Supply and Logistics Intern</h2>
-											<h4 style="margin-bottom: 15px;">2013 Jul-2013 Aug</h4>
-											<h4 style="margin-bottom: 35px;">Evaluate the benefits of the new system</h4>
-										</td>
-									</tr>
-								</table>
+								<ul class="features">
+									<li class="half">
+										<img src="../static/assets/images/honda.png" width="75" height="55" style="padding-bottom:5px;">
+										<h3 style="font-weight:bold;">Honda Taiwan</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">Product Planning Advanced Specialist</h2>
+										<h4 style="margin-bottom: 15px;">2017 Apr-2019 Oct</h4>
+										<h4 style="margin-bottom: 35px;">Received highest performance grade ever in Honda Taiwan</h4>
+									</li>
+									<li class="half">
+										<img src="../static/assets/images/match.png" width="55" height="55" style="padding-bottom:5px;">
+										<h3 style="font-weight:bold;">Find Your Own Way to Burn (Publication)</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">Author</h2>
+										<h4 style="margin-bottom: 15px;">2015 Mar-2016 Oct</h4>
+										<h4 style="margin-bottom: 35px;">Road trip across the US to collect inspirational stories</h4>
+									</li>
+									<li class="half" style="margin-top: 3em;">
+										<img src="../static/assets/images/microsoft.png" width="60" height="65" style="padding-bottom:5px;">
+										<h3 style="font-weight:bold;">Microsoft Taiwan</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">Marketing and Operation Intern</h2>
+										<h4 style="margin-bottom: 15px;">2014 Jul-2015 Jun</h4>
+										<h4 style="margin-bottom: 35px;">Windows team enterprise lecturer</h4>
+									</li>
+									<li class="half">
+										<img src="../static/assets/images/ford.png" width="95" height="50" style="padding-bottom:5px;">
+										<h3 style="font-weight:400; margin-top:10px;">Ford Lio Ho Taiwan</h3>
+										<h2 style="font-size:20px; margin-bottom: 3px;">Supply and Logistics Intern</h2>
+										<h4 style="margin-bottom: 15px;">2013 Jul-2013 Aug</h4>
+										<h4 style="margin-bottom: 35px;">Evaluate the benefits of the new system</h4>
+									</li>
+								</ul>
 <!--								<footer class="major">-->
 <!--									<ul class="actions special">-->
 <!--										<li><a href="generic.html" class="button primary">Get Started</a></li>-->
@@ -313,7 +348,7 @@
 <!--								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>-->
 <!--								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>-->
 								<li><a href="https://www.linkedin.com/in/michael-yu-a4372885/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://github.com/mkyurw" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 <!--								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>-->
 							</ul>
 
